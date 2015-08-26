@@ -1,8 +1,8 @@
 /*****************************************************************************/
 // File: skuareview_server.cpp
-// Version: skuareview, V1.0
+// Version: skuareview_server, V1.0
 // Author: Slava Kitaeff
-// Last Revised: 2 July, 2015
+// Last Revised: 26 August, 2015
 /*****************************************************************************/
 // Copyright 2015, Slava Kitaeff, The University of Western Australia (UWA)
 // Neither this copyright statement, nor the licensing details below
@@ -114,7 +114,7 @@ static void
 {
   kdu_message_formatter &out = kd_msg;
   out.start_message();
-  out << "This is Kakadu's \"kdu_server\" application.\n";
+  out << "This is Kakadu's \"skuareview_server\" application.\n";
   out << "\tCompiled against the Kakadu core system, version "
       << KDU_CORE_VERSION << "\n";
   out << "\tCurrent core system version is "
@@ -168,7 +168,7 @@ static void
   out << "-passwd <administration password>\n";
   if (comprehensive)
     out << "\tIf this argument is used, you will be able to perform various "
-           "remote administration tasks by using the \"kdu_server_admin\" "
+           "remote administration tasks by using the \"skuareview_server_admin\" "
            "application, with the same password.  The password is any "
            "non-empty character string, although long strings, containing "
            "uncommon characters and sub-strings are best, as usual.\n";
